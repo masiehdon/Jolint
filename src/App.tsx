@@ -8,11 +8,13 @@ import Inclusion from './Pages/Inclusion';
 import ContactUs from './Pages/ContactUs';
 import FAQ from './Pages/FAQ';
 
+
 function App() {
 
 
   return (
     <>
+      
       <Layout>
     <Routes>
   <Route path="/how-it-works" element={<HowItWorks />} />
@@ -20,11 +22,11 @@ function App() {
   <Route path="/faq" element={<FAQ />} />
   <Route path="/about-us" element={<AboutUs />} />
   <Route path="/contact-us" element={<ContactUs />} />
-
 </Routes>
-     </Layout>
+      </Layout>
+    
     </>
   )
 }
 
-export default App
+export default App;

@@ -12,13 +12,16 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom';
+import SplitButton from '../../components/SplitButton';
+import { ButtonGroup } from '@mui/material';
 
 const pages = ['How it works', 'Inclusion', 'FAQ', 'About us', 'Contact us'];
-
+const btnSignIn = '#f4770a'
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
   // const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
+ 
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -36,11 +39,11 @@ function ResponsiveAppBar() {
   // };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{backgroundColor: 'white'}}>
       <Container maxWidth="xl">
         <Toolbar sx={{ justifyContent: 'space-between' }} disableGutters  >
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
-          <Avatar alt='Jolint' src='../assets/logo' sx={{ width: 50, height: 50 }}/>
+          <Avatar alt='Jolint' src='../assets/logo' sx={{ width: 50, height: 50, marginLeft: 0}}/>
           <Typography
             variant="h6"
             noWrap
@@ -134,6 +137,22 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
+          <ButtonGroup
+  disableElevation
+  variant="text"
+  aria-label="Disabled elevation buttons"
+>
+          <SplitButton />
+         <Button
+        style={{ backgroundColor: btnSignIn, color: 'white' }}
+        variant="contained"
+        onClick={() => {
+          // Handle button click
+        }}
+            >
+              Sign in
+            </Button>
+          </ButtonGroup>
 
           {/* <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">

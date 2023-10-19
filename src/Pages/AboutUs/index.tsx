@@ -1,16 +1,22 @@
-import { Avatar, Box, Typography } from "@mui/material";
+import { Avatar, Box, Grid, Paper, Typography } from "@mui/material";
 
 
 export default function AboutUs() {
   return (
-    <>
-    <Box sx = {{width: .5,}}>
+  
+      <Grid container>
+        <Grid item xs={12}>
       <Typography variant="h2" sx={{
         padding: 5
-      }}>About us</Typography>
+        }}>About us</Typography>
+        </Grid>
+        <Grid item xs={12}>
       <Typography variant="h4"sx={{
         padding: 5
-      }}>Our mission</Typography>
+        }}>Our mission</Typography>
+        </Grid>
+        <Grid item lg={8} >
+        <Paper elevation={0} sx={{ padding: 3 }}>
       <Typography variant="body2" sx={{
         padding: 5
       }}>
@@ -19,8 +25,9 @@ We make sure to keep ethics and privacy at the forefront when gathering data. Th
 we've stayed committed to these principles, ensuring that individuals' information is handled with care and respect.  Discover the journey of Jolint, and join us in our quest to make the world a better place, one company at a time. 
 With our innovative approach, cutting-edge technologies, and a team of experts, we are committed to creating 
 a more inclusive and equitable work culture for all.
-</Typography>
-      </Box>
+          </Typography>
+        </Paper>
+      </Grid>
    
         <Typography variant="h4"sx={{
         padding: 5
@@ -47,7 +54,7 @@ a more inclusive and equitable work culture for all.
       </Typography>
         </Box>
       </Box>
-      <Box>
+      <Grid>
        
         <Typography variant="h4"sx={{
         padding: 5
@@ -67,7 +74,7 @@ a more inclusive and equitable work culture for all.
             </Typography>
           </Box>
         
-    </Box>
-    </>
+    </Grid>
+  </Grid>
   )
 }
