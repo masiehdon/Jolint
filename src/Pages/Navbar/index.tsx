@@ -10,41 +10,43 @@ import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+// import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom';
 import SplitButton from '../../components/SplitButton';
 import { ButtonGroup } from '@mui/material';
+import logo from '../../assets/logo.svg'
 
-const pages = ['How it works', 'Inclusion', 'FAQ', 'About us', 'Contact us'];
+const pages = ['How it works', 'Why Inclusion', 'FAQ', 'About us', 'Contact us'];
+// const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 const btnSignIn = '#f4770a'
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-  // const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
+  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
  
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
-  // const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-  //   setAnchorElUser(event.currentTarget);
-  // };
+ const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
+   setAnchorElUser(event.currentTarget);
+ };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  // const handleCloseUserMenu = () => {
-  //   setAnchorElUser(null);
-  // };
+  const handleCloseUserMenu = () => {
+    setAnchorElUser(null);
+  };
 
   return (
     <AppBar position="static" sx={{backgroundColor: 'white'}}>
       <Container maxWidth="xl">
         <Toolbar sx={{ justifyContent: 'space-between' }} disableGutters  >
-          {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
-          <Avatar alt='Jolint' src='../assets/logo' sx={{ width: 50, height: 50, marginLeft: 0}}/>
-          <Typography
+        {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
+          <Avatar alt='Jolint' src={logo} sx={{ minWidth: 150, minHeight: 0, marginLeft: 0}}/>
+          {/* <Typography
             variant="h6"
             noWrap
             component="a"
@@ -60,7 +62,7 @@ function ResponsiveAppBar() {
             }}
           >
           
-          </Typography>
+          </Typography> */}
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none',  } }}>
             <IconButton
@@ -69,7 +71,7 @@ function ResponsiveAppBar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color="default"
             >
               <MenuIcon />
             </IconButton>
@@ -105,8 +107,8 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-          <Typography
+          {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
+          {/* <Typography
             variant="h5"
             noWrap
             component="a"
@@ -123,7 +125,7 @@ function ResponsiveAppBar() {
             }}
           >
             LOGO
-          </Typography>
+          </Typography> */}
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
@@ -160,7 +162,7 @@ function ResponsiveAppBar() {
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>
-            <Menu
+             <Menu
               sx={{ mt: '45px' }}
               id="menu-appbar"
               anchorEl={anchorElUser}
@@ -182,7 +184,7 @@ function ResponsiveAppBar() {
                 </MenuItem>
               ))}
             </Menu>
-          </Box> */}
+          </Box>  */}
         </Toolbar>
       </Container>
     </AppBar>

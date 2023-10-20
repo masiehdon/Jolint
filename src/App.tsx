@@ -4,7 +4,7 @@ import './App.css'
 import Layout from './Pages/Layout';
 import AboutUs from './Pages/AboutUs';
 import HowItWorks from './Pages/HowItWorks';
-import Inclusion from './Pages/Inclusion';
+import Inclusion from './Pages/WhyInclusion';
 import ContactUs from './Pages/ContactUs';
 import FAQ from './Pages/FAQ';
 

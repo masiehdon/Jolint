@@ -1,33 +1,91 @@
-import { Box, Card, CardContent, Grid, Typography } from "@mui/material";
+import * as React from 'react';
+import { styled } from '@mui/material/styles';
+import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
+import MuiAccordion, { AccordionProps } from '@mui/material/Accordion';
+import MuiAccordionSummary, {
+  AccordionSummaryProps,
+} from '@mui/material/AccordionSummary';
+import MuiAccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import faqs from '../../mockdata/faqs.js';
+import { Box } from '@mui/material';
 
-export default function Faq() {
-  const linearGradient = 'linear-gradient(#fdecdd, #fff)';
+const Accordion = styled((props: AccordionProps) => (
+  <MuiAccordion disableGutters elevation={0} square {...props} />
+))(({ theme }) => ({
+  border: `1px solid ${theme.palette.divider}`,
+  '&:not(:last-child)': {
+    borderBottom: 0,
+  },
+  '&:before': {
+    display: 'none',
+  },
+}));
+
+const AccordionSummary = styled((props: AccordionSummaryProps) => (
+  <MuiAccordionSummary
+    expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} />}
+    {...props}
+  />
+))(({ theme }) => ({
+  backgroundColor:
+    theme.palette.mode === 'dark'
+      ? 'rgba(255, 255, 255, .05)'
+      : 'rgba(0, 0, 0, .03)',
+  flexDirection: 'row-reverse',
+  '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
+    transform: 'rotate(90deg)',
+  },
+  '& .MuiAccordionSummary-content': {
+    marginLeft: theme.spacing(1),
+  },
+}));
+
+const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
+  padding: theme.spacing(2),
+  borderTop: '1px solid rgba(0, 0, 0, .125)',
+}));
+
+export default function CustomizedAccordions() {
+  const [expanded, setExpanded] = React.useState<string | false>('panel1');
+
+  const handleChange =
+    (panel: string) => (event: React.SyntheticEvent, newExpanded: boolean) => {
+      setExpanded(newExpanded ? panel : false);
+    };
 
   return (
-    <Box sx={{ background: linearGradient, minHeight: '100vh', padding: 2, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-      <Typography variant='h3' sx={{ margin: 2 }}>
-        FAQ
-      </Typography>
-      <Typography variant='subtitle1' sx={{ margin: 2 }}>
-        Learn more about Jolint and our work method
-      </Typography>
-
-      <Grid container spacing={2} justifyContent="center">
-        {[1, 2, 3, 4, 5, 6].map((item) => (
-          <Grid key={item} item xs={12} sm={6} md={4}>
-            <Card sx={{ height: '100%' }}>
-              <CardContent>
-                <Typography variant="h6" sx={{ marginY: 2 }}>
-                  Q: Why do I need to sign a consent form?
-                </Typography>
-                <Typography variant="body1" sx={{ marginY: 2 }}>
-                  A: To be able to help your organization improve inclusion and belonging, and create a more diverse and inclusive workplace, we at Jolint need your consent to collect your personal data.
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
+    <div>
+      <Box>
+      <Typography 
+        variant='h4'
+        sx={{ m: 5 }} 
+              >
+                FAQs
+        </Typography>
+      </Box>
+      {
+            faqs.map((faq, id) => (
+              
+              <Accordion
+                key={id}
+                onChange={handleChange('panel1')}
+                sx={{
+        border: '1px solid black'
+    }}
+              >
+        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
+        
+                  <Typography variant='h5'>{ faq.Q }</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography variant='h5'>
+            {faq.A}
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
         ))}
-      </Grid>
-    </Box>
+
+    </div>
   );
 }
