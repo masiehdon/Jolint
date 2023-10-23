@@ -4,19 +4,19 @@ import './App.css'
 import Layout from './Pages/Layout';
 import AboutUs from './Pages/AboutUs';
 import HowItWorks from './Pages/HowItWorks';
-import Inclusion from './Pages/WhyInclusion';
+import Inclusion from './Pages/Inclusion';
 import ContactUs from './Pages/ContactUs';
 import FAQ from './Pages/FAQ';
-
+import Home from './Pages/Home';
 
 function App() {
-
-
+  
   return (
     <>
-      
+
       <Layout>
-    <Routes>
+        <Routes>
+  <Route path="/" element={<Home />} />       
   <Route path="/how-it-works" element={<HowItWorks />} />
   <Route path="/inclusion" element={<Inclusion />} />
   <Route path="/faq" element={<FAQ />} />
@@ -24,7 +24,6 @@ function App() {
   <Route path="/contact-us" element={<ContactUs />} />
 </Routes>
       </Layout>
-    
     </>
   )
 }
