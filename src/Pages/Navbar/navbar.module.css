@@ -1,0 +1,237 @@
+/* Default styles */
+.aboutUsFinalChild {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, #eef3f8, rgba(220, 231, 242, 0));
+    width: 100%;
+    height: 40vh;
+    opacity: 0.8;
+  }
+  
+  .instanceChild {
+    position: absolute;
+    top: 0;
+    left: -5%; /* Adjust the left position as needed */
+    height: 100%;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  
+  .howItWorks1 {
+    line-height: 32px;
+    border: none;
+    background: none;
+    font-family: var(--knapptexr);
+    font-size: var(--brdtext-size);
+  }
+  
+  /* Common styles for buttons */
+  .aboutUs, .faq, .howItWorks, .inclusion {
+    position: absolute;
+    height: 29.09%;
+    top: 35.45%;
+    bottom: 35.45%;
+    background: none;
+    border: none;
+  }
+  
+  .howItWorks {
+    width: 9.22%;
+    right: 61.02%;
+    left: 24.77%;
+    text-align: center;
+  }
+  
+  .aboutUs, .faq, .inclusion {
+    width: 6.33%;
+    right: 52.5%;
+    left: 36.17%;
+  }
+  
+  .aboutUs, .faq {
+    width: 3.36%;
+    right: 46.95%;
+    left: 44.69%;
+  }
+  
+  .aboutUs {
+    width: 6.56%;
+    right: 38.2%;
+    left: 51.23%;
+  }
+  
+  .arrowDownIcon, .globeIcon {
+    position: absolute;
+    height: 67.74%;
+    width: 21.65%;
+    top: 16.13%;
+    right: 78.35%;
+    bottom: 16.13%;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  
+  .arrowDownIcon {
+    height: 45.16%;
+    width: 14.43%;
+    top: 25.81%;
+    right: 0;
+    bottom: 29.03%;
+    left: 79.57%;
+  }
+  
+  .english {
+    position: absolute;
+    height: 100%;
+    width: 55.67%;
+    top: 0;
+    left: 22.8%;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    font-family: var(--knapptexr);
+    font-size: var(--brdtext-size);
+  }
+  
+  .contactUs, .globeParent {
+    position: absolute;
+    height: 29.09%;
+    width: 7.58%;
+    top: 35.45%;
+    right: 20%;
+    bottom: 35.45%;
+    left: 67.42%;
+  }
+  
+  .contactUs {
+    width: 6.25%;
+    right: 29.77%;
+    left: 58.98%;
+    color: var(--color-black);
+  }
+  
+  .signInKnappChild {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-darkorange);
+  }
+  
+  .signIn {
+    position: absolute;
+    height: 80%;
+    width: 42.86%;
+    top: 9.09%;
+    left: 28.57%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .signInKnapp, .signInKnapp1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: var(--knapptexr-size);
+    color: var(--color-white);
+    border: none;
+  }
+  
+  .signInKnapp {
+    height: 50%;
+    width: 13.67%;
+    top: 26.36%;
+    right: 3.36%;
+    bottom: 23.64%;
+    left: 76.97%;
+    text-align: center;
+    font-size: var(--knapptexr-size);
+    color: var(--color-white);
+  }
+  
+  .groupParent {
+    position: absolute;
+    top: 0;
+    left: -5%;
+    width: 1570px;
+    height: 110px;
+    color: var(--dark-ass-blue);
+  }
+  
+  .aboutUsFinal {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--brdtext-size);
+    color: var(--color-black);
+    font-family: var(--knapptexr);
+  }
+  
+  /* Default styles */
+
+/* Add your default styles here */
+
+/* Media Query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .aboutUsFinalChild {
+      height: 20vh; /* Adjust the height for smaller screens */
+    }
+  
+    .instanceChild {
+      left: -10%; /* Adjust the left position for smaller screens */
+    }
+  
+    /* Additional adjustments for smaller screens */
+    .aboutUsFinal {
+      height: 80px; /* Adjust the height for smaller screens */
+      font-size: 14px; /* Adjust the font size for smaller screens */
+    }
+  
+    .arrowDownIcon {
+      height: 30%; /* Adjust the height for smaller screens */
+      width: 10%; /* Adjust the width for smaller screens */
+      top: 40%; /* Adjust the top position for smaller screens */
+      left: 85%; /* Adjust the left position for smaller screens */
+    }
+  
+    .contactUs {
+      width: 20%; /* Adjust the width for smaller screens */
+      right: 30%; /* Adjust the right position for smaller screens */
+      left: 50%; /* Adjust the left position for smaller screens */
+      color: var(--color-white); /* Adjust the color for smaller screens */
+    }
+  
+    /* Add any additional styles for screens smaller than 768px */
+  }
+  
+  /* Media Query for screens larger than 1450px */
+  @media screen and (min-width: 1450px) {
+    /* Add styles for screens larger than 1450px if needed */
+  }
+  
+  /* Add more media queries as needed for other screen sizes */
+  
+  
+
+  
