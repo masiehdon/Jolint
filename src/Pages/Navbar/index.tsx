@@ -15,7 +15,7 @@ const ResponsiveAppBar: FunctionComponent = () => {
         </Link>
         <div className={styles.inclusion}>
           <Link to="/inclusion"> 
-            <button className={styles.howItWorks1}>Inclusion</button>
+            <button className={styles.howItWorks1}>Why inclusion</button>
           </Link>
         </div>
         <div className={styles.faq}>
