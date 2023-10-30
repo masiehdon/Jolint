@@ -1,15 +1,15 @@
 import { useState } from "react";
-import { TextField, Button, Typography, Grid, Box } from "@mui/material";
+import { TextField, Button, Grid, Box } from "@mui/material";
 
 export default function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    //
-  };
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+ };
+
 
   return (
     <Box sx={{ height: "100vh" }}>

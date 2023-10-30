@@ -172,6 +172,7 @@ const StartsidaFinalVersion: FunctionComponent = () => {
       </div>
     </div>
   );
+
 };
 
 export default StartsidaFinalVersion;
