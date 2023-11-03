@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.svg'
 import { ButtonGroup } from '@mui/material';
 
-const pages = ['How it works', 'Why Inclusion', 'FAQ', 'About us', 'Contact us'];
+const pages = ['How it works', 'Why Inclusion', 'FAQ', 'About us'];
 
  
 const btnSignIn = '#f4770a'
