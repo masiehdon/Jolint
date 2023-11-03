@@ -7,7 +7,7 @@ import HowItWorks from './Pages/HowItWorks';
 import Inclusion from './Pages/Inclusion';
 import ContactUs from './Pages/ContactUs';
 import FAQ from './Pages/FAQ';
-import Home from './Pages/Home';
+// import Home from './Pages/Home';
 
 function App() {
   
@@ -16,7 +16,7 @@ function App() {
 
       <Layout>
         <Routes>
-  <Route path="/" element={<Home />} />       
+  <Route path="/" element={<HowItWorks />} /> 
   <Route path="/how-it-works" element={<HowItWorks />} />
   <Route path="/inclusion" element={<Inclusion />} />
   <Route path="/faq" element={<FAQ />} />
