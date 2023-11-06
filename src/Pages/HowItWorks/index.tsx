@@ -14,18 +14,7 @@ const StartsidaFinalVersion: FunctionComponent = () => {
         Let’s Create an Inclusive Workspace Together
       </b>
       <div className={styles.startsidaFinalVersionChild} />
-      <div className={styles.higherTurnover}>Higher turnover</div>
-      <div className={styles.lowerSickLeave}>Lower sick leave</div>
-      <div className={styles.moreLoyalCustomers}>More loyal customers</div>
-      <div className={styles.lowerStaffTurnover}>Lower staff turnover</div>
-      <div className={styles.div}>21%</div>
-      <div className={styles.div1}>41%</div>
-      <div className={styles.div2}>59%</div>
-      <div className={styles.div3}>200%</div>
-      <b className={styles.inclusionMakesA}>Inclusion makes a difference</b>
-      <div
-        className={styles.organisationsWithHigher}
-      >{`Organisations with higher inclusion among coworkers have: `}</div>
+    
       <div className={styles.startsidaFinalVersionChild} />
       <div className={styles.lessIsolation}>Less isolation</div>
       <div className={styles.lowerSickLeave1}>Lower sick leave</div>
