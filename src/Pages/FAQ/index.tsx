@@ -9,7 +9,7 @@ export default function Faqs() {
   return (
     <div>
       {faqs.map((faq, index) => (
-       <Accordion key={index} sx={{ml: 5, mr: 5, mt: 10}}>
+       <Accordion key={index} sx={{ml: 5, mr: 5, minWidth: '80%' }}>
           <AccordionSummary
             sx={{ml: 5, mr: 5, mt: 10}}
           expandIcon={<ExpandMoreIcon />}
@@ -18,8 +18,8 @@ export default function Faqs() {
         >
           <Typography variant='h5'>{ faq.Q}</Typography>
         </AccordionSummary>
-        <AccordionDetails sx={{ml: 5, mr: 5, background: '#E5E4E2'}}>
-          <Typography variant='h6'>
+        <AccordionDetails sx={{ml: 5, mr: 5, background: '#E5E4E1', }}>
+          <Typography variant='body1' sx={{fontSize: 20}} >
            {faq.A}
           </Typography>
         </AccordionDetails>
