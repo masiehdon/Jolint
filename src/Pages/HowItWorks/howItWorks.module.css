@@ -195,7 +195,7 @@
   .advantagesWithJolint {
     position: absolute;
     top: 1212px;
-    left: 10%;
+    left: 15%;
     font-size: var(--rubrik-sectioner-p-hemsida-size);
     line-height: 62.4px;
     display: inline-block;
@@ -351,7 +351,7 @@
   }
   .hover {
     top: 1303px;
-    left: 32px;
+    left: 152px;
     width: 392px;
     height: 261px;
     overflow: hidden;
@@ -377,14 +377,14 @@
   .hover2 {
     position: absolute;
     top: 1303px;
-    left: 442px;
+    left: 642px;
     width: 392px;
     height: 261px;
     color: var(--white);
   }
   .hover2 {
     top: 1304px;
-    left: 855px;
+    left: 1155px;
     border-radius: var(--br-3xs);
     background-color: var(--color-darkslateblue);
     overflow: hidden;
