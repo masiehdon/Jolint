@@ -1214,6 +1214,45 @@
     font-family: var(--rubrik-sectioner-p-hemsida);
   }
 
+  .ellipseIcon {
+    top: 208px;
+    left: 148px;
+    width: 624.8px;
+    height: 455.5px;
+    object-fit: cover;
+    opacity: 0.2;
+  }
+
+  .streckIcon,
+  .streckIcon1,
+  .streckIcon2,
+  .streckIcon3 {
+    position: absolute;
+    top: 304px;
+    left: 1px;
+    width: 2px;
+    height: 438px;
+    visibility: hidden;
+  }
+
+  .ellipseDiv,
+  .howItWorksFinalVersionTeInner,
+  .howItWorksFinalVersionTeChild,
+  .howItWorksFinalVersionTeItem,
+  .howItWorksFinalVersionTeChild,
+  .howItWorksFinalVersionTeChild1,
+  .howItWorksFinalVersionTeChild2,
+  .howItWorksFinalVersionTeChild3,
+  .howItWorksFinalVersionTeChild4
+   {
+    top: 266px;
+    left: 505px;
+    background-color: #ccd1ff;
+    width: 18px;
+    height: 18px;
+    visibility: hidden;
+  }
+
 }
 
 @media screen and (max-width: 1024px) {
