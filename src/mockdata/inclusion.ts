@@ -1,4 +1,4 @@
-interface InclusionDifference {
+export interface InclusionDifference {
     text: string,
     percentage: number,
     
@@ -22,7 +22,7 @@ export const inclusion: InclusionDifference[] = [{
     
 ]
 
-interface BoxText {
+export interface BoxText {
     text: string
 }
 

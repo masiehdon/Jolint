@@ -7,18 +7,15 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
-// import SplitButton from '../../components/SplitButton';
 import logo from '../../assets/logo.svg'
 import { ButtonGroup } from '@mui/material';
 
-const pages = ['How it works', 'Why Inclusion', 'FAQ', 'About us', 'Contact us'];
-// const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
- 
+const pages = ['How it works', 'Why Inclusion', 'FAQ', 'About us'];
 
+ 
 const btnSignIn = '#f4770a'
 
 function ResponsiveAppBar() {
@@ -29,27 +26,24 @@ function ResponsiveAppBar() {
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
-//  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-//    setAnchorElUser(event.currentTarget);
-//  };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  // const handleCloseUserMenu = () => {
-  //   setAnchorElUser(null);
-  // };
-
   return (
     
-    <AppBar position="static" sx={{backgroundColor: 'white',}}>
-      <Container maxWidth="xl">
-        <Toolbar sx={{ justifyContent: 'space-between'}} disableGutters  >
+    <AppBar position="static" sx={{ backgroundColor: 'white',  width: 1, m: 0 }}>
      
-          <Avatar alt='Jolint' src={logo} sx={{ minWidth: 150, minHeight: 0, marginLeft: 0}}/>
+      <Container maxWidth='xl'>
+          
+        <Toolbar sx={{ justifyContent: 'space-between'}} disableGutters  >
+       
+           <Box sx={{ display: 'flex', alignItems: 'center'}} >
+            <img src={logo} alt='jolint logo' />
+          </Box >
          
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none',  } }}>
+          <Box sx={{alignItems: 'center', ml: 10, flexGrow: 1, display: { xs: 'flex', md: 'none',  } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -81,9 +75,11 @@ function ResponsiveAppBar() {
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography
-                    textAlign="center">
                     
-                  <Link to={`/${page.replace(/\s+/g, '-')}`}>
+                    textAlign="center"
+                  >
+                    
+                  <Link to={`/${page.replace(/\s+/g, '-')}`} style={{color: 'black'}}>
                     {page}
                     </Link>
 
@@ -93,14 +89,14 @@ function ResponsiveAppBar() {
             </Menu>
           </Box>
           
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1 , ml:10, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2 ,color: 'white', display: 'block' }}
               >
-                <Link to={`/${page.replace(/\s+/g, '-')}`}>
+                <Link to={`/${page.replace(/\s+/g, '-')}`} style={{color: 'black'}}>
                 {page}
                 </Link>
               </Button>
@@ -111,7 +107,7 @@ function ResponsiveAppBar() {
   variant="text"
   aria-label="Disabled elevation buttons"
 >
-          {/* <SplitButton /> */}
+          
          <Button
         style={{ backgroundColor: btnSignIn, color: 'white', borderRadius: 10}}
         variant="contained"
