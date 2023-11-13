@@ -1,80 +1,106 @@
-import { Avatar, Box, Grid, Paper, Typography } from "@mui/material";
+import { FunctionComponent } from "react";
+import styles from "./AboutUs.module.css";
 
-
-export default function AboutUs() {
+const AboutUsFinal: FunctionComponent = () => {
   return (
-  
-      <Grid container>
-        <Grid item xs={12}>
-      <Typography variant="h2" sx={{
-        padding: 5
-        }}>About us</Typography>
-        </Grid>
-        <Grid item xs={12}>
-      <Typography variant="h4"sx={{
-        padding: 5
-        }}>Our mission</Typography>
-        </Grid>
-        <Grid item lg={8} >
-        <Paper elevation={0} sx={{ padding: 3 }}>
-      <Typography variant="body2" sx={{
-        padding: 5
-      }}>
-        At Jolint, we are driven by a passion for improving workplaces and creating a better world for everyone. 
-We make sure to keep ethics and privacy at the forefront when gathering data. Throughout our journey, 
-we've stayed committed to these principles, ensuring that individuals' information is handled with care and respect.  Discover the journey of Jolint, and join us in our quest to make the world a better place, one company at a time. 
-With our innovative approach, cutting-edge technologies, and a team of experts, we are committed to creating 
-a more inclusive and equitable work culture for all.
-          </Typography>
-        </Paper>
-      </Grid>
-   
-        <Typography variant="h4"sx={{
-        padding: 5
-      }}>Co-founders:</Typography>
-      
-      
-        <Typography variant="h4"sx={{
-        padding: 5
-      }}>Klaudia Mur</Typography>
+    <div className={styles.aboutUsFinal}>
+      <div className={styles.aboutUsFinalChild} />
+      {/* <div className={styles.groupParent}>
+  <img className={styles.instanceChild} alt="" src="/group-271.svg" /> 
+  <button className={styles.howItWorks}>
+    <div className={styles.howItWorks1}>How it works</div>
+  </button>
+  <div className={styles.inclusion}>
+    <button className={styles.howItWorks1}>Inclusion</button>
+  </div>
+  <div className={styles.faq}>
+    <button className={styles.howItWorks1}>FAQ</button>
+  </div>
+  <div className={styles.aboutUs}>
+    <button className={styles.howItWorks1}>About us</button>
+  </div>
+  <div className={styles.globeParent}>
+    <img className={styles.globeIcon} alt="" src="/globe1.svg" />
+    <img className={styles.arrowDownIcon} alt="" src="/arrowdown2.svg" />
+    <button className={styles.english}>English</button>
+  </div> 
+  <div className={styles.contactUs}>
+    <button className={styles.howItWorks1}>Contact us</button>
+  </div>
+  <div className={styles.signInKnapp}>
+    <button className={styles.signInKnapp1}>
+      <div className={styles.signInKnappChild} />
+      <b className={styles.signIn}>Consent form</b>
+    </button>
+  </div>
+</div> */}
 
-      <Box  display="flex">
-             <Box>
-        <Avatar
-          alt='Klaudia'
-          src="https://cdn.pixabay.com/photo/2015/03/03/18/58/woman-657753_1280.jpg"
-          sx={{ width: 250, height: 250 }}
-        />
-      </Box>
-      <Box>
-        <Typography variant="body2" sx={{
-        padding: 5
-        }}>
-          I am a data scientist and physicist. My background in Complex Adaptive Systems has fueled my passion for understanding how people interact, communicate, and collaborate in the workplace. My mission is to use data-driven analysis to make the workplace a better place for employees, by understanding the complexities of human interactions and finding ways to improve them. Join me on my journey to enhance workplace culture and improve the work environment. With my expertise in data analysis and understanding of human behavior, I am committed to leading the way towards a more inclusive and equitable work culture for all.
-      </Typography>
-        </Box>
-      </Box>
-      <Grid>
-       
-        <Typography variant="h4"sx={{
-        padding: 5
-        }}>Faheem Shah</Typography>
-        <Box  display="flex">
-        <Box> 
-        <Avatar
-          alt='Faheem'
-          src="https://media.istockphoto.com/id/960115700/sv/foto/portr%C3%A4tt-av-ung-asiatisk-man.jpg?s=1024x1024&w=is&k=20&c=GDNer_7sl9qNh_90ljzxIhPqRnGHYet9N5GyrOhbatQ="
-          sx={{ width: 250, height: 250 }}
-            />
-          </Box>
-        <Typography variant="body2" sx={{
-        padding: 5
-        }}>
-          As the co-founder of Jolint, I bring a wealth of expertise in organizational communication and collaboration to the table. With a background in international politics, communication studies, and specialized training in these areas, I understand the intricacies and nuances of effective communication within organizations. My passion for this field led me to start Jolint, with the goal of empowering companies to create more inclusive and equitable work cultures. Join me in my journey with Jolint, as we work together to improve communication and collaboration within organizations for a more inclusive work environment.
-            </Typography>
-          </Box>
-        
-    </Grid>
-  </Grid>
-  )
-}
+      <b className={styles.aboutUs2}>About us</b>
+      <div className={styles.atJolintWeContainer}>
+        <p className={styles.atJolintWeAreDrivenByA}>
+          <span className={styles.atJolintWe}>
+            At Jolint, we are driven by a passion for
+          </span>
+          <b className={styles.atJolintWe}>{` improving workplaces `}</b>
+          <span>{`and creating a better world for everyone. `}</span>
+        </p>
+        <p
+          className={styles.atJolintWeAreDrivenByA}
+        >{`We make sure to keep ethics and privacy at the forefront when gathering data. Throughout our journey, `}</p>
+        <p className={styles.atJolintWeAreDrivenByA}>
+          <span>we've stayed committed to these principles, ensuring that</span>
+          <b
+            className={styles.atJolintWe}
+          >{` individuals' information is handled with care and respect.  `}</b>
+          <span>{`Discover the journey of Jolint, and join us in our quest to make the world a better place, one company at a time. `}</span>
+        </p>
+        <p
+          className={styles.atJolintWeAreDrivenByA}
+        >{`With our innovative approach, cutting-edge technologies, and a team of experts, we are committed to creating `}</p>
+        <p className={styles.atJolintWeAreDrivenByA}>
+          <span>a</span>
+          <b className={styles.atJolintWe}>
+            {" "}
+            more inclusive and equitable work culture for all.
+          </b>
+        </p>
+        <p className={styles.atJolintWeAreDrivenByA}>&nbsp;</p>
+      </div>
+      <b className={styles.ourMission}>Our mission</b>
+      <b className={styles.coFounders}>Co-founders:</b>
+      <div className={styles.gradiant2} />
+      <img className={styles.image17Icon} alt="" src="/image-17@2x.png" />
+      <div className={styles.gradiant21}>
+        <img className={styles.image16Icon} alt="" src="/image-16@2x.png" />
+        <div className={styles.iAmA}>
+          I am a data scientist and physicist. My background in Complex Adaptive
+          Systems has fueled my passion for understanding how people interact,
+          communicate, and collaborate in the workplace. My mission is to use
+          data-driven analysis to make the workplace a better place for
+          employees, by understanding the complexities of human interactions and
+          finding ways to improve them. Join me on my journey to enhance
+          workplace culture and improve the work environment. With my expertise
+          in data analysis and understanding of human behavior, I am committed
+          to leading the way towards a more inclusive and equitable work culture
+          for all.
+        </div>
+        <div className={styles.asTheCoFounder}>
+          As the co-founder of Jolint, I bring a wealth of expertise in
+          organizational communication and collaboration to the table. With a
+          background in international politics, communication studies, and
+          specialized training in these areas, I understand the intricacies and
+          nuances of effective communication within organizations. My passion
+          for this field led me to start Jolint, with the goal of empowering
+          companies to create more inclusive and equitable work cultures. Join
+          me in my journey with Jolint, as we work together to improve
+          communication and collaboration within organizations for a more
+          inclusive work environment.
+        </div>
+      </div>
+      <div className={styles.klaudiaMur}>Klaudia Mur</div>
+      <div className={styles.faheemShah}>Faheem Shah</div>
+    </div>
+  );
+};
+
+export default AboutUsFinal;
