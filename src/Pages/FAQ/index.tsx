@@ -14,6 +14,7 @@ export default function Faqs() {
           ml: 5, mr: 5, maxWidth: {xs: '100%', sm: '90%', lg: '80%'}, '&.Mui-expanded': {
               ml: 5, 
             }, }}>
+
           <AccordionSummary
             sx={{ml: 5, mr: 5, mt: 10}}
           expandIcon={<ExpandMoreIcon />}
@@ -22,14 +23,18 @@ export default function Faqs() {
         >
           <Typography variant='h5'>{ faq.Q}</Typography>
         </AccordionSummary>
+
         <AccordionDetails sx={{ml: 5, mr: 5,  }}>
           <Typography variant='h6' sx={{fontSize: 20}} >
+
            {faq.A}
           </Typography>
         </AccordionDetails>
       </Accordion>
      ))}
       
+
     </Box>
+
   );
 }
