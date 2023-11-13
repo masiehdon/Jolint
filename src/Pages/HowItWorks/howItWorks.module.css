@@ -985,7 +985,7 @@
 
   .hover1{
     position: absolute;
-    top: 43%;
+    top: 38%;
     left: 10%;
     width: 332px;
     height: 261px;
@@ -993,8 +993,9 @@
   }
 
   .hover2 {
-    top: 50%;
+    top: 45%;
     left: 10%;
+    width: 332px;
     border-radius: var(--br-3xs);
     background-color: var(--color-darkslateblue);
     overflow: hidden;
