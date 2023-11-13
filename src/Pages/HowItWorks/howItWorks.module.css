@@ -784,6 +784,8 @@
     position: relative;
     background-color: var(--white);
     width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
     height: 4028px;
     text-align: left;
     font-size: var(--rubrik-h3-size);
@@ -835,6 +837,15 @@
   height: auto;
  }
 
+ .polygonIcon {
+  position: absolute;
+  top: 578.2px;
+  left: 290px;
+  width: 15px;
+  height: 15.6px;
+  display: none;
+}
+
  .startsidaFinalVersionChild {
   top: 700px;
   width: 480px;
@@ -856,9 +867,9 @@
   }
   .whyInclusionKnapp {
     position: absolute;
-    top: 13.5%;
-    left: 46px;
-    width: 175px;
+    top: 12.5%;
+    left: 5%;
+    width: 165px;
     height: 55px;
     font-size: var(--knapptexr-size);
     color: var(--color-black);
@@ -871,12 +882,12 @@
     left: 12.57%;
   }
   .signInKnapp {
-    height: 1.33%;
-    width: 180px;
-    top: 15.3%;
+    height: 50px;
+    width: 165px;
+    top: 14%;
     right: 80.47%;
     bottom: 88.32%;
-    left: 40px;
+    left: 5%;
     text-align: center;
     font-size: var(--knapptexr-size);
     color: var(--white);
@@ -892,14 +903,14 @@
 
   .organisationsWithHigher1 {
     position: absolute;
-    top: 21%;
+    top: 19%;
     left: 9%;
     width: 350px;
   }
 
   .inclusionMakesA {
     left: 10%;
-    top: 18.5%;
+    top: 16.5%;
   }
 
   .lessIsolation {
@@ -908,6 +919,7 @@
     left: 6%;
     width: 50px;
     text-align: center;
+    font-size: 18px;
   }
 
   .lowerSickLeave1{
@@ -916,6 +928,7 @@
     left: 28%;
     width: 50px;
     text-align: center;
+    font-size: 18px;
   }
 
     .lowerStaffTurnover1{
@@ -924,27 +937,29 @@
     left: 50%;
     width: 50px;
     text-align: center;
+    font-size: 18px;
   }
 
   .moreSatisfiedEmployees {
     position: absolute;
     top: 1060px;
-    left: 72%;
+    left: 73%;
     width: 50px;
     text-align: center;
+    font-size: 18px;
   }
 
   .advantagesWithJolint {
     position: absolute;
     top: 1212px;
-    left: 5%;
-    font-size: var(--rubrik-sectioner-p-hemsida-size);
+    left: 3%;
+    font-size: 25px;
     line-height: 62.4px;
     display: inline-block;
     font-family: var(--rubrik-sectioner-p-hemsida);
     color: var(--color-black);
     text-align: center;
-    width: 450px;
+    width: 350px;
     height: 40px;
   }
 
@@ -959,9 +974,9 @@
   }
 
   .hover {
-    top: 36%;
+    top: 31%;
     left: 10%;
-    width: 392px;
+    width: 332px;
     height: 261px;
     overflow: hidden;
     text-align: center;
@@ -972,7 +987,7 @@
     position: absolute;
     top: 43%;
     left: 10%;
-    width: 392px;
+    width: 332px;
     height: 261px;
     color: var(--white);
   }
@@ -1235,17 +1250,29 @@
 
   .howItWorksKnapp {
     position: absolute;
-    top: 13.5%;
-    left: 230px;
+    top: 12.5%;
+    left: 50%;
     width: 190px;
     height: 55px;
     font-size: var(--knapptexr-size);
     color: var(--white);
   }
 
+  .startsidaFinalVersion {
+    position: relative;
+    background-color: var(--white);
+    width: 100%;
+    overflow-x: hidden;
+    height: 4428px;
+    text-align: left;
+    font-size: var(--rubrik-h3-size);
+    color: var(--dark-ass-blue);
+    font-family: var(--knapptexr);
+  }
+
 }
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
+@media screen and (min-width: 600px) and (max-width: 900px) {
 
   body {
     overflow-x: hidden;
@@ -1680,10 +1707,22 @@ display: none;
   left: 20%;
 }
 
+.startsidaFinalVersion {
+  position: relative;
+  background-color: var(--white);
+  width: 100%;
+  overflow-x: hidden;
+  height: 4428px;
+  text-align: left;
+  font-size: var(--rubrik-h3-size);
+  color: var(--dark-ass-blue);
+  font-family: var(--knapptexr);
+}
+
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 900px) and (max-width: 1200px) {
   body {
     overflow-x: hidden;
   }
@@ -1727,6 +1766,18 @@ height: auto;
 top: 700px;
 width: 480px;
 height: 250px;
+}
+.startsidaFinalVersion {
+  position: relative;
+  background-color: var(--white);
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 4228px;
+  text-align: left;
+  font-size: var(--rubrik-h3-size);
+  color: var(--dark-ass-blue);
+  font-family: var(--knapptexr);
 }
 .gainValuableData {
 position: absolute;
@@ -2937,7 +2988,9 @@ display: none;
     position: relative;
     background-color: var(--white);
     width: 100%;
-    height: 4028px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 4128px;
     text-align: left;
     font-size: var(--rubrik-h3-size);
     color: var(--dark-ass-blue);
