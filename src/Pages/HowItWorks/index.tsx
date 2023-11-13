@@ -30,11 +30,7 @@ const StartsidaFinalVersion: FunctionComponent = () => {
       <div
         className={styles.organisationsWithHigher1}
       >{`Organisations with higher inclusion among coworkers have according to [source]: `}</div>
-      <img
-        className={styles.startsidaFinalVersionInner}
-        alt=""
-        src="/group-26.svg"
-      />
+      
       <img className={styles.ellipseIcon} alt="" src="/ellipse-34@2x.png" />
       <b className={styles.advantagesWithJolint}>
         Advantages with Jolint at your workplace
