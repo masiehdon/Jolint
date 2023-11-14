@@ -111,6 +111,7 @@ function ResponsiveAppBar() {
          <Button
         style={{ backgroundColor: btnSignIn, color: 'white', borderRadius: 10}}
         variant="contained"
+        href=" https://jolint-consent-form-one.vercel.app/"
         onClick={() => {
           // Handle button click
         }}
