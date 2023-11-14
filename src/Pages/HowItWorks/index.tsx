@@ -8,10 +8,10 @@ import { Box } from "@material-ui/core";
 const StartsidaFinalVersion: FunctionComponent = () => {
 
   const containerStyle = {
-    background: 'linear-gradient(115.34deg, rgba(7, 63, 234, 0.28), rgba(209, 223, 237, 0.22) 25.98%, rgba(237, 243, 249, 0.93) 48.39%, #fafcff 58.59%)',
-    minHeight: '70vh', 
-    padding: '0', 
-  };
+    background: 'linear-gradient(115.34deg, rgba(255, 165, 0, 0.8), rgba(255, 255, 255, 0.6) 30%, rgba(0, 0, 255, 0.4) 70%, #fafcff 100%)',
+    minHeight: '75vh',
+    padding: '0',
+};
 
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 600);
 
@@ -29,9 +29,9 @@ const StartsidaFinalVersion: FunctionComponent = () => {
 
   const calculateWidth = () => {
     if (isSmallScreen) {
-      return '80%'; // For small screens, take up 80% of the width
+      return '80%';
     } else {
-      return '30%'; // For larger screens, take up 30% of the width
+      return '30%'; 
     }
   };
   return (
@@ -83,7 +83,7 @@ const StartsidaFinalVersion: FunctionComponent = () => {
     <Grid container item xs={10} justifyContent="flex-start">
     <Grid item xs={12} sm={6} md={3}>
       <div style={{ marginLeft: '10px' }}>
-        <Button variant="contained" color="primary" style={{ backgroundColor: '#F4770A', borderRadius: '10px' }}>
+        <Button variant="contained" color="primary" href="https://jolint-consent-form-one.vercel.app/" style={{ backgroundColor: '#F4770A', borderRadius: '10px' }}>
           CONSENT FORM
         </Button>
       </div>
@@ -198,8 +198,8 @@ const StartsidaFinalVersion: FunctionComponent = () => {
     />
   </Grid>
 
-  <Grid item xs={12} sm={8} md={4} lg={4}>
-    <Typography variant="h6" color="dark" gutterBottom>
+  <Grid item xs={12} sm={8} md={4} lg={6}>
+    <Typography variant="h6" color="dark" gutterBottom style={{ marginRight: '20%', marginLeft: '10%' }}>
     <strong>Data Extraction</strong>
     <br />
     Jolint pulls out interaction info from common work tools like email, but without touching any personal details. Imagine it like seeing where conversations happen without knowing who said what. This way, Jolint gets a bird's-eye view of how people connect at work while keeping everyone's privacy intact.
@@ -218,8 +218,8 @@ const StartsidaFinalVersion: FunctionComponent = () => {
     />
   </Grid>
 
-  <Grid item xs={12} sm={8} md={4} lg={4}>
-    <Typography variant="h6" color="dark" gutterBottom>
+  <Grid item xs={12} sm={8} md={4} lg={6}>
+    <Typography variant="h6" color="dark" gutterBottom style={{ marginRight: '20%', marginLeft: '10%' }}>
     <strong>Anonymization</strong>
     <br />
     Jolint gives everyone an anonymized ID, replacing real names and emails to keep things private. So, even when looking at how people interact, there's no way to tell who's who, ensuring everyone's privacy while still understanding the big picture of connections at work.
@@ -238,8 +238,8 @@ const StartsidaFinalVersion: FunctionComponent = () => {
     />
   </Grid>
 
-  <Grid item xs={12} sm={8} md={4} lg={4}>
-    <Typography variant="h6" color="dark" gutterBottom>
+  <Grid item xs={12} sm={8} md={4} lg={6}>
+    <Typography variant="h6" color="dark" gutterBottom style={{ marginRight: '20%', marginLeft: '10%' }}>
     <strong>Data Processing</strong>
     <br />
     Data is transformed into a network representation where each employee is a node and interactions form connections. Each person becomes a point on the web, and the lines between them show conversations. This setup helps Jolint see how well everyone is connected, without knowing any personal details.
@@ -258,8 +258,8 @@ const StartsidaFinalVersion: FunctionComponent = () => {
     />
   </Grid>
 
-  <Grid item xs={12} sm={8} md={4} lg={4}>
-    <Typography variant="h6" color="dark" gutterBottom>
+  <Grid item xs={12} sm={8} md={4} lg={6}>
+    <Typography variant="h6" color="dark" gutterBottom style={{ marginRight: '20%', marginLeft: '10%' }}>
     <strong>AI  Analysis</strong>
     <br />
     AI and machine learning analyze data to pinpoint drivers of inclusion and belonging. They seek patterns to address questions such as new hire integration speed or how to elevate inclusion scores by addressing organizational weak points. The analysis also delves into social capital variations based on gender, role, and hire timing..
@@ -278,8 +278,8 @@ const StartsidaFinalVersion: FunctionComponent = () => {
     />
   </Grid>
 
-  <Grid item xs={12} sm={8} md={4} lg={4}>
-    <Typography variant="h6" color="dark" gutterBottom>
+  <Grid item xs={12} sm={8} md={4} lg={6}>
+    <Typography variant="h6" color="dark" gutterBottom style={{ marginRight: '20%', marginLeft: '10%' }}>
     <strong>Insights Interface</strong>
     <br />
     Insights from the data analysis are showcased in an intuitive interface, offering aggregated-level insights for easier understanding and action. It highlights key drivers of inclusion and recommends activities tailored to your company's specific challenges, aiding in informed decision-making.
