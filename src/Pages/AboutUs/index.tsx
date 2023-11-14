@@ -43,8 +43,8 @@ a <strong> more inclusive and equitable work culture for all. </strong>
   
   <Grid item xs={12} sm={4} md={4} lg={2}>
     <img
-      src="/public/image16.png"
-      alt="How It Works"
+      src="public/image16.png"
+      alt="16"
       style={{ width: '100%', height: 'auto' , marginLeft: '20px', marginTop: '30px'}}
     />
   </Grid>
@@ -63,8 +63,8 @@ a <strong> more inclusive and equitable work culture for all. </strong>
   
   <Grid item xs={12} sm={4} md={4} lg={2}>
     <img
-      src="/public/image17.png"
-      alt="How It Works"
+      src="public/image17.png"
+      alt="17"
       style={{ width: '100%', height: 'auto' , marginLeft: '20px', marginTop: '30px'}}
     />
   </Grid>
