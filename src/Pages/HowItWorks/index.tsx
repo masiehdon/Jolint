@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Button from '@material-ui/core/Button';
 import { Grid, Typography, Paper} from "@mui/material";
 import { Box } from "@material-ui/core";
+import { Link } from 'react-router-dom';
 
 const StartsidaFinalVersion: FunctionComponent = () => {
 
@@ -64,9 +65,11 @@ const StartsidaFinalVersion: FunctionComponent = () => {
   <Grid container spacing={2} justifyContent="flex-start" style={{ marginTop: '20px' }}>
   <Grid item>
     <div style={{ marginLeft: '10px' }}>
+    <Link to="/why-inclusion">
       <Button variant="outlined" color="primary" style={{ borderRadius: '10px'}}>
         Why inclusion
       </Button>
+      </Link>
     </div>
   </Grid>
 
