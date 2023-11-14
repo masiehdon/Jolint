@@ -61,82 +61,80 @@ const StartsidaFinalVersion: FunctionComponent = () => {
     </Grid>
   </Grid>
 
-  <Grid container spacing={2} justifyContent="flex-start" style={{ marginTop: '20px' }} height={400}>
-    
-
-    <Grid item>
-      <div style={{ marginLeft: '10px' }}>
-        <Button variant="outlined" color="primary" style={{ borderRadius: '10px'}}>
-          Why inclusion
-        </Button>
-      </div>
-    </Grid>
-
-    <Grid item>
-      <div style={{ marginLeft: '10px', }}>
-        <Button variant="contained" color="primary" style={{ borderRadius: '10px'}} >
-          How it Works
-        </Button>
-      </div>
-    </Grid>
-
-    <Grid container item xs={10} justifyContent="flex-start">
-    <Grid item xs={12} sm={6} md={3}>
-      <div style={{ marginLeft: '10px' }}>
-        <Button variant="contained" color="primary" href="https://jolint-consent-form-one.vercel.app/" style={{ backgroundColor: '#F4770A', borderRadius: '10px' }}>
-          CONSENT FORM
-        </Button>
-      </div>
-    </Grid>
+  <Grid container spacing={2} justifyContent="flex-start" style={{ marginTop: '20px' }}>
+  <Grid item>
+    <div style={{ marginLeft: '10px' }}>
+      <Button variant="outlined" color="primary" style={{ borderRadius: '10px'}}>
+        Why inclusion
+      </Button>
+    </div>
   </Grid>
 
-    <Grid item xs={12} style={{ marginTop: '10px', textAlign: 'center' }}>
-      <Typography variant="h4" align="center" color="textPrimary" gutterBottom>
-        Inclusion makes a difference
-      </Typography>
-      <Typography variant="h5" align="center" color="textSecondary" gutterBottom>
-        Organisations with higher inclusion among coworkers have according to [source]:
-      </Typography>
+  <Grid item>
+    <div style={{ marginLeft: '10px' }}>
+      <Button variant="contained" color="primary" style={{ borderRadius: '10px'}} >
+        How it Works
+      </Button>
+    </div>
+  </Grid>
 
-      <Grid container justifyContent="space-evenly">
-    <Grid item xs={3} style={{ textAlign: 'center' }}>
-      <Typography variant="h4" color="primary" style={{ margin: '15px' }}>
-        31%
-      </Typography>
-      <Typography variant="h6" color="textSecondary">
-        Less isolation
-      </Typography>
-    </Grid>
+  <Grid container item xs={12} style={{ marginTop: '20px', textAlign: 'center' }}>
+  <Grid item xs={12} sm={6} md={3}>
+    <div style={{ marginLeft: '0' }}>
+      <Button variant="contained" color="primary" href="https://jolint-consent-form-one.vercel.app/" style={{ backgroundColor: '#F4770A', borderRadius: '10px' }}>
+        CONSENT FORM
+      </Button>
+    </div>
+  </Grid>
+</Grid>
 
-    <Grid item xs={3} style={{ textAlign: 'center' }}>
-      <Typography variant="h4" color="primary" style={{ margin: '15px' }}>
-        41%
-      </Typography>
-      <Typography variant="h6" color="textSecondary">
-      Lower sick leave
-      </Typography>
-    </Grid>
+  <Grid item xs={12} style={{ marginTop: '10px', textAlign: 'center' }}>
+    <Typography variant="h4" align="center" color="textPrimary" gutterBottom>
+      Inclusion makes a difference
+    </Typography>
+    <Typography variant="h5" align="center" color="textSecondary" gutterBottom>
+      Organisations with higher inclusion among coworkers have according to [source]:
+    </Typography>
 
-    <Grid item xs={3} style={{ textAlign: 'center' }}>
-      <Typography variant="h4" color="primary" style={{ margin: '15px' }}>
-        59%
-      </Typography>
-      <Typography variant="h6" color="textSecondary">
-      Lower staff turnover
-      </Typography>
-    </Grid>
+    <Grid container justifyContent="space-evenly">
+      <Grid item xs={3} style={{ textAlign: 'center' }}>
+        <Typography variant="h4" color="primary" style={{ margin: '15px' }}>
+          31%
+        </Typography>
+        <Typography variant="h6" color="textSecondary">
+          Less isolation
+        </Typography>
+      </Grid>
 
-    <Grid item xs={3} style={{ textAlign: 'center' }}>
-      <Typography variant="h4" color="primary" style={{ margin: '15px' }}>
-        61%
-      </Typography>
-      <Typography variant="h6" color="textSecondary">
-      More satisfied employees
-      </Typography>
+      <Grid item xs={3} style={{ textAlign: 'center' }}>
+        <Typography variant="h4" color="primary" style={{ margin: '15px' }}>
+          41%
+        </Typography>
+        <Typography variant="h6" color="textSecondary">
+          Lower sick leave
+        </Typography>
+      </Grid>
+
+      <Grid item xs={3} style={{ textAlign: 'center' }}>
+        <Typography variant="h4" color="primary" style={{ margin: '15px' }}>
+          59%
+        </Typography>
+        <Typography variant="h6" color="textSecondary">
+          Lower staff turnover
+        </Typography>
+      </Grid>
+
+      <Grid item xs={3} style={{ textAlign: 'center' }}>
+        <Typography variant="h4" color="primary" style={{ margin: '15px' }}>
+          61%
+        </Typography>
+        <Typography variant="h6" color="textSecondary">
+          More satisfied employees
+        </Typography>
+      </Grid>
     </Grid>
   </Grid>
-    </Grid>
-  </Grid>
+</Grid>
   <Typography variant="h4" align="center" color="textPrimary" gutterBottom style={{ marginTop: '20px', fontWeight: 'bold' }}> 
       Advantages with Jolint at your workplace
       </Typography>
