@@ -190,7 +190,7 @@ const StartsidaFinalVersion: FunctionComponent = () => {
   
   <Grid item xs={12} sm={4} md={4} lg={3}>
     <img
-      src="/public/second.svg"
+      src="/public/second.png"
       alt="How It Works"
       style={{ width: '100%', height: 'auto' , marginLeft: '20px'}}
     />
